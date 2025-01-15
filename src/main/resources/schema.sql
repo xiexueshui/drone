@@ -1,0 +1,48 @@
+-- 用户表
+CREATE TABLE users (
+    id BIGINT PRIMARY KEY AUTO_INCREMENT,
+    username VARCHAR(50) NOT NULL UNIQUE,
+    password VARCHAR(100) NOT NULL,
+    role VARCHAR(20) NOT NULL,
+    created_by BIGINT COMMENT '创建人ID',
+    updated_by BIGINT COMMENT '更新人ID',
+    created_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+-- 媒体文件表
+CREATE TABLE media_files (
+    id BIGINT PRIMARY KEY AUTO_INCREMENT,
+    file_name VARCHAR(255) NOT NULL,
+    file_type VARCHAR(20) NOT NULL,
+    file_url VARCHAR(500) NOT NULL,
+    file_size BIGINT COMMENT '文件大小，单位字节',
+    created_by BIGINT COMMENT '创建人ID',
+    updated_by BIGINT COMMENT '更新人ID',
+    created_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+-- 标签表
+CREATE TABLE tags (
+    id BIGINT PRIMARY KEY AUTO_INCREMENT,
+    media_id BIGINT COMMENT '关联的媒体文件ID',
+    tag_name VARCHAR(100) NOT NULL,
+    created_by BIGINT COMMENT '创建人ID',
+    updated_by BIGINT COMMENT '更新人ID',
+    created_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+-- 视频剪切记录表
+CREATE TABLE video_cuts (
+    id BIGINT PRIMARY KEY AUTO_INCREMENT,
+    original_video_id BIGINT COMMENT '原始视频ID',
+    new_video_url VARCHAR(500) NOT NULL,
+    start_time INT COMMENT '剪切开始时间(秒)',
+    end_time INT COMMENT '剪切结束时间(秒)',
+    created_by BIGINT COMMENT '创建人ID',
+    updated_by BIGINT COMMENT '更新人ID',
+    created_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+); 
