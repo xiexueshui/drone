@@ -4,7 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4531660c-5817-4521-8780-a7f410fafa7f" name="更改" comment="初始化" />
+    <list default="true" id="4531660c-5817-4521-8780-a7f410fafa7f" name="更改" comment="初始化">
+      <change afterPath="$PROJECT_DIR$/.idea/CoolRequestCookiePersistent.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/CoolRequestHistoryPersistent.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/example/media/entity/Video.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/example/media/entity/VideoClip.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media-manager" beforeDir="false" afterPath="$PROJECT_DIR$/media-manager" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media-manager/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/media-manager/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media-manager/src/.env.development" beforeDir="false" afterPath="$PROJECT_DIR$/media-manager/src/.env.development" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media-manager/src/api/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/media-manager/src/api/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media-manager/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/media-manager/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media-manager/src/utils/request.js" beforeDir="false" afterPath="$PROJECT_DIR$/media-manager/src/utils/request.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media-manager/src/views/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/media-manager/src/views/Login.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media-manager/view/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media-manager/view/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/example/media/controller/MediaController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/example/media/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/example/media/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/example/media/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/example/media/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/example/media/service/MediaService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/example/media/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/example/media/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/resources/schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/resources/schema.sql" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,25 +65,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Maven.media-system [clean].executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "jdk.selected.JAVA_MODULE": "1.8",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/drone/media-manager",
-    "project.structure.last.edited": "模块",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.48390806",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.gitlab.GitLabSettingsConfigurable",
-    "应用程序.MediaSystemApplication.executor": "Run"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Maven.media-system [clean].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/drone/server/src/main/java/com/example/media/entity&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.48390806&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.gitlab.GitLabSettingsConfigurable&quot;,
+    &quot;应用程序.MediaSystemApplication.executor&quot;: &quot;Debug&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.example.media.dto" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\drone\server\src\main\java\com\example\media\entity" />
     </key>
   </component>
   <component name="RunManager">
@@ -147,7 +174,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736935223175</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="初始化">
+      <option name="closed" value="true" />
+      <created>1736944804553</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1736944804553</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

@@ -1,18 +1,18 @@
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3306/media_system
+    url: jdbc:mysql://1.94.109.12:3306/media_system
     username: root
-    password: your_password
+    password: xxs@2024
     driver-class-name: com.mysql.cj.jdbc.Driver
 
 minio:
-  endpoint: http://1.94.109.12/:9000
+  endpoint: http://1.94.109.12:9000
   accessKey: admin
   secretKey: password123
   bucket: media-files
 
 server:
-  port: 8080 
+  port: 3335
 
 jwt:
   secret: your-secret-key
