@@ -1,14 +1,15 @@
 package com.example.media.service;
 
+import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.example.media.common.Result;
 import com.example.media.dto.LoginDTO;
 import com.example.media.entity.User;
 import com.example.media.mapper.UserMapper;
 import com.example.media.util.JwtUtil;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
-
+import java.util.Base64;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -21,20 +22,18 @@ public class UserService {
     @Autowired
     private JwtUtil jwtUtil;
 
-    @Autowired
-    private PasswordEncoder passwordEncoder;
-
     public Result<Map<String, Object>> login(LoginDTO loginDTO) {
         // 根据用户名查询用户
-        User user = userMapper.findByUsername(loginDTO.getUsername());
+        User user = userMapper.selectOne(new LambdaQueryWrapper<User>().eq(User::getUsername, loginDTO.getUsername()));
         
         // 用户不存在
         if (user == null) {
             return Result.error("用户名或密码错误");
         }
         
-        // 验证密码
-        if (!passwordEncoder.matches(loginDTO.getPassword(), user.getPassword())) {
+        // Base64加密密码进行比对
+        String encodedPassword = Base64.getEncoder().encodeToString(loginDTO.getPassword().getBytes());
+        if (!encodedPassword.equals(user.getPassword())) {
             return Result.error("用户名或密码错误");
         }
         
